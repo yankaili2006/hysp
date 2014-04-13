@@ -1,0 +1,116 @@
+.photox a:link {
+	color: #432121;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.photox a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+.photox a:hover {
+	color: #666666;
+}
+
+.photox a:active {
+    color: #666666;
+	text-decoration: none;
+}
+
+.photox {
+	visibility:visible;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.rollphotos {
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	width:100%;
+}
+
+body:nth-of-type(1) .blkphotox{
+padding:0px;
+} 
+
+.blkphotox {
+	border:0px; 
+	padding:0px;
+	overflow: hidden;
+	ZOOM: 1; 
+	position: relative;
+}
+
+.blkphotox .LeftButton {
+	left:0px;
+	float:left;
+	width:0px;
+	cursor: pointer;
+	position: absolute;
+	height:164px;
+	top:0px;
+}
+
+.blkphotox .RightButton {
+	background: url(../images/roll.png) no-repeat 0px 0px;
+	right:1px;
+	float:right;
+	width:16px;
+	cursor: pointer;
+	position: absolute;
+	height:25px;
+	top:53px;
+}
+
+.blkphotox .Cont {
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	overflow: hidden;
+}
+
+.blkphotox .box {
+	float:left;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+	width:230px;
+}
+
+.box .fang{
+	padding:0px;
+	margin:0px;
+}
+
+.box .picFit{
+	overflow:hidden;
+}
+
+.blkphotox .box img {
+}
+
+div.box div.title{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+width:190px;
+}
+
+div.title a:link,div.title a:visited,div.title a:active{
+color:#4b4b4b;
+font:12px/35px SimSun,Arial,Sans-Serif;
+text-decoration: none;
+}
+
+div.title a:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/35px SimSun,Arial,Sans-Serif;
+}

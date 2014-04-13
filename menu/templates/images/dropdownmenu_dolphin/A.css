@@ -1,0 +1,101 @@
+.dropdownmenu_dolphin{
+   clear:both;
+   padding:0px;
+   white-space:nowrap;
+   overflow:hidden;
+   width:100%;
+   color:#000;
+}
+
+
+.dorpmenu_dolphin{
+   float:left;
+   color:#000;
+   width:132px;
+   height:56px;
+   text-align:center;
+   padding:0px;
+   margin:0px;
+   background:url(line.png) right 0px no-repeat;
+}
+
+.dorpmenu_dolphin_current{
+   float:left;
+   color:#fff;
+   width:132px;
+   height:56px;
+   text-align:center;
+   padding:0px;
+   margin:0px;
+   background-color:#f96125;
+}
+
+a.dorpmenu_dolphin:link,a.dorpmenu_dolphin:visited,a.dorpmenu_dolphin:active {
+   color: #000;
+   text-decoration: none;
+   height:56px;
+   font:14px/56px 'SimSun',Arial,Sans-Serif;
+   margin:0px;
+}
+
+a.dorpmenu_dolphin:hover {
+   color: #fff; 
+   text-decoration: none;
+   height:56px;
+   background-color:#f96125;
+   font:14px/56px 'SimSun',Arial,Sans-Serif;
+} 
+
+a.dorpmenu_dolphin_current {
+   display:block;
+   color: #fff; 
+   text-decoration: none;
+   height:56px;
+   background-color:#f96125;
+   font:14px/56px 'SimSun',Arial,Sans-Serif;
+} 
+
+div.subdorpmenu_dolphin{
+   display:none;
+   position:absolute;
+}
+
+div.subdorpmenu_dolphin ul{
+   color:#fff;
+   background-color:#212221;
+   padding:17px 37px;
+   margin-left:-3px;
+   margin-left:0px\9;
+   border-top:2px #fff solid;
+   min-width:57px;
+}
+
+div.subdorpmenu_dolphin li{
+   padding:0px;
+   list-style-type:none;
+   text-align:left; 
+   height:28px;
+   color:#fff;
+}
+
+div.subdorpmenu_dolphin li.current{
+   color:#fff;
+   height:28px;
+   display:block;
+}
+
+a.subdorpmenu_dolphin:link,a.subdorpmenu_dolphin:visited,a.subdorpmenu_dolphin:active{
+   display:block;
+   color:#fff; 
+   text-decoration: none;
+   font:12px/30px 'SimSun',Arial,Sans-Serif;
+   margin:0px;
+}
+
+a.subdorpmenu_dolphin:hover {
+   display:block;
+   color:#fff; 
+   text-decoration: none;
+   font:12px/30px 'SimSun',Arial,Sans-Serif;
+   margin:0px;
+}

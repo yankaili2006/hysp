@@ -1,0 +1,50 @@
+#menumain{
+   margin:0;
+   white-space:nowrap;
+   overflow:hidden;
+   width:100%;
+   background:url(menubg.gif) 0px 0px repeat-x;
+}
+
+#menumain .menumain{
+   float:left;
+   height:36px;
+   text-align:center;
+   margin:0px;
+   padding:0px 19px 0px 23px;
+   background:url(menu.gif) 0px 0px no-repeat;
+}
+
+#menumain .menuleft{
+   float:left;
+   height:36px;
+   width:72px;
+}
+
+#menumain .menufirst{
+   float:left;
+   height:36px;
+   text-align:center;
+   margin:0px;
+   padding:0px 19px 0px 0px;
+}
+
+#menumain .menuright{
+   float:right;
+   height:36px;
+   margin:0px 0px 0px 2px;
+   width:11px;
+}
+
+#menumain a:link,#menumain a:active,#menumain a:visited{
+   color: #fff; 
+   display:block;
+   text-decoration: none;
+   font:bold 12px/35px 'SimSun',Arial,Sans-Serif;
+}
+
+#menumain a:hover {
+   color: #ffcc00; 
+   text-decoration: none;
+   font:bold 12px/35px 'SimSun',Arial,Sans-Serif;
+} 

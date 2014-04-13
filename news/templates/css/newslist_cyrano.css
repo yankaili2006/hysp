@@ -1,0 +1,28 @@
+/* ============ндубап╠М============== */
+
+ul.newslist_cyrano{
+	margin:16px 22px 0px 17px;
+	padding:0px;
+}
+
+li.newslist_cyrano {
+	margin:0;
+	padding-left:17px;
+	list-style-type: none;
+	color:#565656;
+	height:25px;
+	background:url(../images/line2.gif) 0px 0px no-repeat;
+}
+
+a.newslist_cyrano:link,a.newslist_cyrano:visited,a.newslist_cyrano:active{
+	text-decoration: none;
+	color:#565656;
+	height:25px;
+	font:12px/25px simsun;
+}
+
+a.newslist_cyrano:hover{
+	color:#ff0000;
+	text-decoration: underline;
+	font:12px/25px simsun;
+}

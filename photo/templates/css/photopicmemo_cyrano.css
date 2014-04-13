@@ -1,0 +1,47 @@
+/* ============Õº∆¨+ΩÈ…‹¡–±Ì============== */
+
+ul.photopicmemo_cyrano{
+	margin:20px 0px 0px 75px;
+	padding:0px;
+}
+
+ul.photopicmemo_cyrano li{
+	float:left;
+	width:300px;
+	list-style-type: none; 
+	padding:0px;
+	margin-right:6px;
+	margin-bottom:20px;
+	border:0px #ff0000 solid;
+	overflow: hidden;
+}
+
+ul.photopicmemo_cyrano div.picFit{
+	float:left;
+	text-align:center;
+	margin-right:20px;
+	overflow: hidden;
+}
+
+ul.photopicmemo_cyrano div.tm{
+	width:150px;
+	margin-right:6px;
+}
+
+ul.photopicmemo_cyrano a.title:link,ul.photopicmemo_cyrano a.title:visited,ul.photopicmemo_cyrano a.title:active{
+	font:12px/16px simsun;
+	color:#a72c00;
+	text-decoration: none;
+}
+
+ul.photopicmemo_cyrano a.title:hover{
+	font:12px/16px simsun;
+	color:#ff0000;
+	text-decoration: underline;
+}
+
+ul.photopicmemo_cyrano div.memo{
+	font:12px/18px simsun;
+	margin-top:3px;
+	color:#545454;
+}

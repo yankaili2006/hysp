@@ -1,0 +1,30 @@
+
+<div style="font:12px/14px simsun">
+	<a href="{#RP#}" style="color:#505050;font:12px/14px simsun;" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('{#SiteUrl#}'); return(false);"><img src="images/l.png" border="0" style="margin:0px 16px 0px 0px;vertical-align:middle" />设为首页</a>  
+	<a href="" style="color:#505050;font:12px/14px simsun;padding-left:6px;" onclick="AddFavorite(window.location,'{#sitename#}')" href="javascript:void(0)"><img src="images/l.png" border="0" style="margin:0px 16px 0px 7px;vertical-align:middle" />加入收藏</a>
+</div>
+<script type="text/javascript" language="javascript">
+        //加入收藏
+        function AddFavorite(sURL, sTitle) {
+        	alert(sURL);
+            sURL = encodeURI(sURL);
+        try{
+            window.external.addFavorite(sURL, sTitle);
+        }catch(e) {
+            try{
+                window.sidebar.addPanel(sTitle, sURL, "");
+            }catch (e) {
+                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+            }
+        }
+    }
+    //设为首页
+    function SetHome(url){
+        if (document.all) {
+            document.body.style.behavior='url(#default#homepage)';
+            document.body.setHomePage(url);
+        }else{
+            alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+        }
+    }
+</script>

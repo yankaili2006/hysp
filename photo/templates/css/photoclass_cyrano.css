@@ -1,0 +1,25 @@
+/* ============分类列表============== */
+
+div.photoclass_cyrano{
+	margin:0;
+	padding:10px 0px 20px 4px;
+}
+
+
+a.photoclass_cyrano:link,a.photoclass_cyrano:visited,a.photoclass_cyrano:active{
+	display:block;
+	text-decoration: none;
+	font:12px/16px Verdana, Arial, Helvetica, sans-serif;
+	height:24px;
+	text-align:left;
+	background:url(../images/dot2.png) 0px 0px no-repeat;
+	padding-left:31px;
+	color:#4c4c4c;
+}
+
+a.photoclass_cyrano:hover{
+	display:block;
+	color: #f96125; 
+	text-decoration: none;
+	background:url(../images/dot2now.png) 0px 0px no-repeat;
+}

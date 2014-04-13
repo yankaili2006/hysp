@@ -1,0 +1,63 @@
+.photox {
+	visibility:visible;
+	margin:13px 0px 0px 0px;
+	position: relative;
+	text-align:center;
+	font-family: Simsun, Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	width:100%;
+}
+
+.blkphotox {
+	border:0px; 
+	padding:0px; 
+	overflow: hidden;
+	ZOOM: 1; 
+	position: relative;
+}
+
+.blkphotox .LeftButton {
+	background: url(../images/left.gif) no-repeat 0px 0px;
+	left:9px;
+	float: left;
+	width: 9px;
+	cursor: pointer;
+	position: absolute;
+	height: 17px;
+	top:46px;
+}
+
+.blkphotox .RightButton {
+	right:9px;
+	background: url(../images/right.gif) no-repeat 0px 0px;
+	float: right;
+	width: 9px;
+	cursor: pointer;
+	position: absolute;
+	height: 17px;
+	margin-left:0px;
+	top:46px;
+}
+
+.blkphotox .Cont {
+	padding:0px;
+	overflow:hidden; 
+	text-align:center;
+}
+
+.blkphotox .box {
+	float:left;
+	text-align:center;
+	margin-right:3px;
+}
+
+.box .fang{
+	padding:0px;
+	text-align:center;
+	border:0px #eee solid;
+}
+
+.box .picFit{
+	overflow: hidden;
+}
+
