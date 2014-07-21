@@ -15,7 +15,7 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 			return $arr;
 	}
 	
-	if ($jpg_size > 500000) {
+	if ($jpg_size > 5000000) {
 
 			$arr[0]="err";
 			$arr[1]=$strUploadNotice2;
@@ -62,6 +62,10 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 		$file_path = ROOTPATH.$path."/".$fname;
 		$UploadImage[3] = $path."/".$fname;
 		
+		if (!is_dir(dirname($file_path))){ 
+			mkdir(dirname($file_path), 0777); 
+		} 
+
 		copy ($jpg,$file_path);
 		chmod ($file_path,0666);
 		

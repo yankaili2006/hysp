@@ -2,7 +2,7 @@
 
 #[数据库参数]
 $dbHost="localhost";
-$dbName="hy1";
+$dbName="hysp";
 $dbUser="root";
 $dbPass="admin";
 
@@ -13,7 +13,7 @@ $TablePre="hy1";
 $sLan="zh_cn";
 
 #[网址]
-$SiteUrl="http://localhost/";
+$SiteUrl="http://115.28.183.145/hysp";
 
 #----------------------------------#
 

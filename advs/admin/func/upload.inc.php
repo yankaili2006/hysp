@@ -21,13 +21,18 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 
 	}
 
-	if ($jpg_type != "image/pjpeg" && $jpg_type != "image/jpeg" && $jpg_type!= "image/gif" && $jpg_type != "image/x-png" && $jpg_type != "application/x-shockwave-flash") {
+	if ($jpg_type != "image/pjpeg" && $jpg_type != "image/jpeg" && $jpg_type!= "image/gif" && $jpg_type != "image/png" && $jpg_type != "application/x-shockwave-flash") {
 				err($strUploadNotice3,"","");
 	}
-		
+
 	switch ($jpg_type) {
 
 			case "image/pjpeg" : 
+			$extention = ".jpg";
+			$UploadImage[2]="gif";
+			break;
+
+			case "image/jpeg" : 
 			$extention = ".jpg";
 			$UploadImage[2]="gif";
 			break;
@@ -37,7 +42,7 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 			$UploadImage[2]="gif";
 			break;
 
-			case "image/x-png" : 
+			case "image/png" : 
 			$extention = ".png";
 			$UploadImage[2]="gif";
 			break;
@@ -52,6 +57,10 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 		$fname=$fname.$extention;
 		$file_path = ROOTPATH.$path."/".$fname;
 		$UploadImage[3] = $path."/".$fname;
+
+                if (!is_dir(dirname($file_path))){
+                    mkdir(dirname($file_path), 0777);
+                }
 		
 		copy ($jpg,$file_path);
 		chmod ($file_path,0666);
@@ -118,6 +127,10 @@ function NewUploadImage1($jpg,$jpg_type,$jpg_size,$path){
 		$fname=$fname."_s".$extention;
 		$file_path = ROOTPATH.$path."/".$fname;
 		$UploadImage[3] = $path."/".$fname;
+
+                if (!is_dir(dirname($file_path))){
+                    mkdir(dirname($file_path), 0777);
+                }
 		
 		copy ($jpg,$file_path);
 		chmod ($file_path,0666);
